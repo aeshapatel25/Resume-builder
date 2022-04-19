@@ -1,0 +1,33 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins' , sans-serif;
+}
+
+h1{
+    font-size: 300px;
+    font-weight: bold;
+    font-style: initial;
+    display: flex;
+    justify-content: center;
+    padding-right: 300px;
+}
+
+p{
+    display: flex;
+    justify-content: center;
+    margin-left: 200px;
+    font-size: 30px;
+}
+.text{
+    font-size: 60px;
+    font-weight: bolder;
+    margin-left: 300px;
+    color: crimson;
+}
+.tet{
+    font-size: 20px;
+    margin-top: 40px;
+    margin-left: 30px;
+}

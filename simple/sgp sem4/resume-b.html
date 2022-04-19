@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resume.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Resume-C</title>
+
+</head>
+<body>
+
+<div class="container" id="cv-form">   
+<h1 class="text-center my-2"  id="text1"> Resume Generator </h1>
+<p class="text-center" id="text2">By Oseen Marcelino & Aesha Patel</p>
+  <br>
+  <br>
+<div class="row">
+    <div class="col-md-6">
+<h3>Personal Information</h3>
+<hr>
+
+<div class="form-group mt-1">
+    <label for="namefield" class="abc1">Your Name</label>
+    <input type="text" 
+    id="nameField" 
+    placeholder="Enter here"
+    class="form-control"/>
+</div>
+
+<br>
+
+<div class="form-group mt-1">
+    <label for="contactfield" class="abc1">Contact Number</label>
+    <input type="text" 
+    id="contactField" 
+    placeholder="Enter here"
+    class="form-control"/>
+</div>
+
+<br>
+
+<div class="form-group mt-2">
+    <label for="addressfield"  class="abc1">Your Address</label>
+    <textarea 
+    id="addressField" 
+    placeholder="Enter here"
+    class="form-control">
+</textarea>
+</div>
+
+<div class="form-group mt-3">
+    <label for="">Select Your Photo</label>
+    <input id="imgField" type="file" class="form-control"/>
+</div>
+
+<p class="text-secondary my-3" class="text-primary" id="abc2">Important Links</p>
+
+<div class="form-group mt-2">
+    <label for="fbfield" class="abc1">InstaGram Link</label>
+    <input type="text" 
+    id="fbfield" 
+    placeholder="Enter here"
+    class="form-control"/>
+</div>
+
+<div class="form-group mt-2">
+    <label for="lnfield" class="abc1">Linkedln Link</label>
+    <input type="text" 
+    id="lnfield" 
+    placeholder="Enter here"
+    class="form-control"/>
+</div>
+
+    <div class="form-group mt-2">
+        <label for="Twfield" class="abc1">Twitter Link</label>
+        <input type="text" 
+        id="Twfield" 
+        placeholder="Enter here"
+        class="form-control"/>
+    </div>
+
+    <div class="form-group mt-2">
+        <label for="GHfield" class="abc1">GitHub Link</label>
+        <input type="text" 
+        id="GHfield" 
+        placeholder="Enter here"
+        class="form-control"/>
+    </div>
+    
+</div>
+
+    <div class="col-md-6 ">
+<h3> Professional Information</h3>
+<hr>
+<div class="form-group mt-2 my-3">
+    <label for="" class="abc1">Objective</label>
+    <textarea  
+    id="objectiveField"
+    rows="5"
+    placeholder="Enter here"
+    class="form-control ">
+</textarea>
+</div>
+
+<div class="form-group mt-2" id="we">
+    <label for="" class="abc1">Awards</label>
+    <textarea  
+    placeholder="Enter here"
+    class="form-control weField"
+    rows="3">
+</textarea>
+
+
+<div class="container text-center mt-2" id="weAddButton">
+    <button onclick= "addNewWEField()" class="btn btn-primary btn-lm" class="btn1">Add</button>
+</div>
+</div>
+
+<div class="form-group mt-2" id="aq" >
+    <label for="" class="abc1">Academic Qualification</label>
+    <textarea
+    rows="3"  
+    placeholder="Enter here"
+    class="form-control eqField">
+</textarea> 
+
+<div class="container text-center mt-2" id="aqAddButton">
+    <button onclick="addNewAQField()" class="btn btn-primary btn-lm" class="btn1"> Add </button>
+</div>
+</div>
+
+<div class="form-group mt-2" id="pq" >
+    <label for="" class="abc1">Project</label>
+    <textarea
+    rows="3"  
+    placeholder="Enter here"
+    class="form-control rqField">
+</textarea> 
+
+<div class="container text-center mt-2" id="pqAddButton">
+    <button onclick="addNewpqField()" class="btn btn-primary btn-lm" class="btn1"> Add </button>
+</div>
+</div>
+
+</div>
+</div>
+
+<br>
+<div class="container text-center mt-3">
+<button onclick="generateCV()" class="btn btn-primary btn-lg"> Generate Resume </button>
+</div>
+</div>
+
+<br> <br> <br> <br>
+    <div class="container" id="cv-template">
+        <div class="row">
+            <div class="col-md-4 text-center py-5 background">
+             <img src="null.jpg" 
+             alt="" 
+             class="img-fluid myimg"
+             id="imgTemplate"/> 
+             
+             <div class="container">
+                 <p id="nameT1">Aman Kumar Tiwari</p>
+                 <p id="contactT">+914985404467 , +914984202439</p>
+                 <p id="addressT">563563?4524152 Sector 35 Noida, INDIA</p>
+                 <hr/>
+            
+        <p>
+            <a id="insta" href="#1">https://www.InstaGram.com/LearnCodeWithHar</a>
+        </p>
+        
+        <p>
+            <a id="linkedln" href="#1">https://www.Linkedln.com/LearnCodeWithHar</a>
+        </p>
+        
+        <p>
+            <a id="twitter" href="#1">https://www.Twitter.com/LearnCodeWithHar</a>
+        </p>
+
+    
+        <p>
+            <a id="github" href="#1">https://www.github.com/LearnCodeWithHar</a>
+        </p>
+
+        </div>
+            </div>
+        
+            <div class="col-md-8 py-5">
+            <h1 id="nameT" class="text-center" style="font-weight: 980">
+            Aman Kumar Tiwari </h1>
+        
+            <div class="card mt-4">
+                <div class="card-header" id="abc">
+                <h3>Objective</h3>
+                </div>
+
+                <div class="card-body">
+                    <p id="objectiveT" > Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Fusce at lacinia est, commodo porttitor arcu. 
+                        Donec ut orci sodales, iaculis justo id, ultrices nisl.
+                        Nullam fringilla quis lorem quis eleifend. Praesent sodales
+                        scelerisque sapien, id gravida lectus faucibus eget. 
+                        Duis sed efficitur risus. Ut imperdiet diam luctus ultrices rhoncus. 
+                        Sed tincidunt libero quis lorem pulvinar tempus. 
+                        Aliquam augue quam, gravida eu vulputate ut, varius eget orci.</p>
+                </div>
+            </div>
+        
+            <div class="card mt-4">
+                <div class="card-header" id="abc">
+                <h3>Awards</h3>
+                </div>
+                <div class="card-body">
+                    
+             <ul id="weT">
+                 <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, nesciunt!</li>
+                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, nesciunt!</li>
+    
+                 <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, nesciunt!</li>
+             </ul>
+        
+                </div>
+            </div>
+        
+            <div class="card mt-4">
+                <div class="card-header" id="abc">
+                <h3>Academic Qualification</h3>
+                </div>
+                <div class="card-body">
+                    
+             <ul id="aqT">
+                 <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, nesciunt!</li>
+    
+                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, nesciunt!</li>
+            
+                 <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, nesciunt!</li>
+             </ul>
+        
+                </div>
+            </div>
+
+            <div class="card mt-4">
+                <div class="card-header" id="abc">
+                <h3>Project</h3>
+                </div>
+
+                <div class="card-body">
+                    
+             <ul id="pqT">
+                 <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, nesciunt!</li>
+    
+                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, nesciunt!</li>
+            
+                 <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, nesciunt!</li>
+             </ul>
+        
+                </div>
+            </div>
+         
+    <div class="container mt-3 text-center">
+    <button onclick="printCV()" class="btn background" id="abc"> Print Cv </button>
+          
+    </div>
+            
+</div>
+</div>
+</div>
+                
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+ integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+</script>    
+
+<script src="resume.js"> </script> 
+
+</body>
+</html>
